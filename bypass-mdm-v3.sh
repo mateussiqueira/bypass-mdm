@@ -47,9 +47,9 @@ NC='\033[0m'
 
 error_exit() { echo -e "${RED}ERROR: $1${NC}" >&2; exit 1; }
 warn()       { echo -e "${YEL}WARNING: $1${NC}" >&2; }
-success()    { echo -e "${GRN}\u2713 $1${NC}"; }
-info()       { echo -e "${BLU}\u2139 $1${NC}"; }
-step()       { echo -e "${CYAN}\u25b8 $1${NC}"; }
+success()    { echo -e "${GRN}\u2713 $1${NC}" >&2; }
+info()       { echo -e "${BLU}\u2139 $1${NC}" >&2; }
+step()       { echo -e "${CYAN}\u25b8 $1${NC}" >&2; }
 
 PB=/usr/libexec/PlistBuddy
 
